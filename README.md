@@ -28,6 +28,9 @@ paddingAll20(child: child);//四个内边距20的Padding容器
 paddingH20V10(child: child);
 paddingH20(child: child);
 paddingV10(child: child);
+
+paddingH(num,child: child);//增加自定义 水平内边距
+paddingV(num,child: child);//增加自定义 垂直内边距
 ```
 
 ## Padding数值

@@ -39,3 +39,19 @@ Widget paddingH20V10({required Widget child}) {
     child: child,
   );
 }
+
+//Padding组件 横向自定义间距
+Widget paddingH(double horizontal, {required Widget child}) {
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: horizontal),
+    child: child,
+  );
+}
+
+//Padding组件 纵向自定义间距
+Widget paddingV(double vertical, {required Widget child}) {
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: vertical),
+    child: child,
+  );
+}
