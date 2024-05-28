@@ -24,36 +24,40 @@ flutter_styled 这个仓库主要是封装一些常用的Flutter组件，样式�
 ## Padding组件
 ```dart
 /// Padding 相关
-paddingAll20(child: child);//四个内边距20的Padding容器
-paddingH20V10(child: child);
-paddingH20(child: child);
-paddingV10(child: child);
+//四个内边距100的Padding容器
+100.padding(child: child);
 
-paddingH(num,child: child);//增加自定义 水平内边距
-paddingV(num,child: child);//增加自定义 垂直内边距
+// 横向20内边距
+20.horizontalPadding(child: child);
+
+// 纵向10内边距
+10.verticalPadding(child: child);
+
+// 横向20 纵向10
+paddingHV( 20 , 10 , child: child);
 ```
 
 ## Padding数值
 ```dart
 /// 给其他容器增加内边距
-Container(padding: all20);//四个内边距20
-Container(padding: h20);//水平边距20
-Container(padding: v10);
+Container(padding: 30.around);//四个内边距20
+Container(padding: 20.horizontal);//水平边距20
+Container(padding: 10.vertical);
 
 /// 给列表增加内边距
-ListView(padding: all20);
-ListView(padding: h20v10);
+ListView(padding: 20.around);
+Container(padding: 20.horizontal);//水平边距20
+
+/// 不太推荐的用法
+ListView(padding: 20.horizontal..add(10.vertical));
 ```
 
 ## 圆角值
 ```dart
-/// 给其他容器增加圆角值
-CircleAvatar(radius: borderRadiusCircular3);
-CircleAvatar(radius: borderRadiusCircular5);
-CircleAvatar(radius: borderRadiusCircular8);
-CircleAvatar(radius: borderRadiusCircular10);
-CircleAvatar(radius: borderRadiusCircular12);
-CircleAvatar(radius: borderRadiusCircular15);
-CircleAvatar(radius: borderRadiusCircular18);
+/// BorderRadius 给其他容器增加圆角值
+BoxDecoration(borderRadius: 5.borderRadius)
+
+/// Radius 给其他容器增加圆角值
+BoxDecoration(borderRadius: BorderRadius.only(topLeft: 4.radius));
 ```
 
