@@ -23,7 +23,6 @@ flutter_styled 这个仓库主要是封装一些常用的Flutter组件，样式�
 
 ## Padding组件
 ```dart
-/// Padding 相关
 //四个内边距100的Padding容器
 100.padding(child: child);
 
@@ -46,7 +45,7 @@ Container(padding: 10.vertical);
 
 /// 给列表增加内边距
 ListView(padding: 20.around);
-Container(padding: 20.horizontal);//水平边距20
+ListView(padding: 20.horizontal);
 
 /// 不太推荐的用法
 ListView(padding: 20.horizontal..add(10.vertical));
