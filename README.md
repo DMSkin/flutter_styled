@@ -21,21 +21,6 @@ flutter_styled 这个仓库主要是封装一些常用的Flutter组件，样式�
 10.verticalSpace,//纵向间隔 等同于 SizedBox(height: 10);
 ```
 
-## Padding组件
-```dart
-//四个内边距100的Padding容器
-100.padding(child: child);
-
-// 横向20内边距
-20.horizontalPadding(child: child);
-
-// 纵向10内边距
-10.verticalPadding(child: child);
-
-// 横向20 纵向10
-paddingHV( 20 , 10 , child: child);
-```
-
 ## Padding数值
 ```dart
 /// 给其他容器增加内边距
