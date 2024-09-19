@@ -16,12 +16,13 @@ void main() {
 
   // ignore: unused_element
   BoxDecoration test1() {
-    
     ListView(padding: 20.horizontal..add(10.vertical));
 
-    Container(padding: 20.around); //四个内边距20
+    Container(padding: 20.padding); //四个内边距20
     Container(padding: 20.horizontal); //水平边距20
-
+    Container(padding: 20.vertical); //垂直内边距20
+    Container(padding: 20.upperPadding); //上左右内边距20
+    Container(padding: 20.lowerPadding); //下左右内边距20
 
     const Padding(
       padding: EdgeInsets.symmetric(vertical: 20),
